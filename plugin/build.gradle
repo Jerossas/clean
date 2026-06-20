@@ -10,7 +10,7 @@ repositories {
 gradlePlugin {
     plugins {
         greeting {
-            id = 'com.dunno.greeting'
+            id = 'com.dunno.clean'
             implementationClass = 'com.dunno.CleanPlugin'
         }
     }
