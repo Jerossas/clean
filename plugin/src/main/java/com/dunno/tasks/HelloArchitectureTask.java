@@ -6,7 +6,7 @@ import org.gradle.api.tasks.TaskAction;
 public class HelloArchitectureTask extends DefaultTask {
 
     @TaskAction
-    void greet() {
+    void run() {
         System.out.println("Hello from Spring Architecture plugin!");
     }
 }
