@@ -1,18 +1,22 @@
 package com.dunno;
 
+import com.dunno.tasks.HelloArchitectureTask;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
+import org.gradle.api.tasks.TaskProvider;
 
 public class CleanPlugin implements Plugin<Project> {
     @Override
     public void apply(Project project) {
-        project.getTasks().register("helloArchitecture", task -> {
+        TaskProvider<HelloArchitectureTask> taskProvider =
+                project.getTasks().register(
+                        "helloArchitecture",
+                        HelloArchitectureTask.class
+                );
 
-            task.setDescription("Displays a greeting from the architecture plugin");
-            task.setGroup("greeting");
-            task.doFirst(t -> {
-                System.out.println("Hello from Spring Architecture plugin!");
-            });
+        taskProvider.configure(helloArchitectureTask -> {
+            helloArchitectureTask.setGroup("Architecture");
+            helloArchitectureTask.setDescription("Prints a greeting message to the console.");
         });
     }
 }
