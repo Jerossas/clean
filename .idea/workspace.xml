@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a1a877-5632-4fc7-8d26-0efed0431022" name="Changes" comment="" />
+    <list default="true" id="b8a1a877-5632-4fc7-8d26-0efed0431022" name="Changes" comment="feat: configure task to get the extension properties and use them, and map the extension properties to the task properties">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/tasks/HelloArchitectureTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/tasks/HelloArchitectureTask.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,10 +27,25 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jerossas&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jerossas/clean.git&quot;,
+    &quot;accountId&quot;: &quot;b87d0d40-a256-40b4-a742-54aaee5cbbe3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3FPR058BO4DOsHlp4sR5xu6uA9p" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,9 +55,15 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/workspace/dev/computer-science/gradle/plugins/clean",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -56,11 +82,71 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1781974493279</updated>
-      <workItem from="1781974495147" duration="2891000" />
+      <workItem from="1781974495147" duration="12177000" />
+      <workItem from="1782230103618" duration="5487000" />
+      <workItem from="1783296574522" duration="757000" />
     </task>
+    <task id="LOCAL-00001" summary="git: ignore consumer project, used to explore and test clean plugin">
+      <option name="closed" value="true" />
+      <created>1781984553432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781984553432</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor: delete root build.gradle file and added in plugin subproject">
+      <option name="closed" value="true" />
+      <created>1781991279622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1781991279622</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: rename plugin artifact to clean">
+      <option name="closed" value="true" />
+      <created>1781992309521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781992309521</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: register a basic task called helloArchitecture">
+      <option name="closed" value="true" />
+      <created>1782072435869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782072435870</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: create custom extension to get information from the build">
+      <option name="closed" value="true" />
+      <created>1782234284067</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782234284067</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: configure task to get the extension properties and use them, and map the extension properties to the task properties">
+      <option name="closed" value="true" />
+      <created>1782234362389</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782234362389</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git: ignore consumer project, used to explore and test clean plugin" />
+    <MESSAGE value="refactor: delete root build.gradle file and added in plugin subproject" />
+    <MESSAGE value="feat: rename plugin artifact to clean" />
+    <MESSAGE value="feat: register a basic task called helloArchitecture" />
+    <MESSAGE value="feat: create custom extension to get information from the build" />
+    <MESSAGE value="feat: configure task to get the extension properties and use them, and map the extension properties to the task properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: configure task to get the extension properties and use them, and map the extension properties to the task properties" />
   </component>
 </project>
