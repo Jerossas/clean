@@ -6,12 +6,17 @@ import com.dunno.tasks.ScaffoldTask;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.tasks.TaskProvider;
+import org.gradle.api.tasks.wrapper.Wrapper;
 
 public class CleanPlugin implements Plugin<Project> {
 
     @Override
     public void apply(Project project) {
 
+        project.getTasks().named("wrapper", Wrapper.class, wrapper -> {
+
+            wrapper.setGradleVersion("9.5.1");
+        });
         var helloArchitectureProvider = registerHelloArchitectureTask(project);
         var scaffoldProvider = registerScaffoldTask(project);
     }
@@ -39,6 +44,7 @@ public class CleanPlugin implements Plugin<Project> {
 
         provider.configure(scaffoldTask -> {
             scaffoldTask.setGroup("Architecture");
+            scaffoldTask.dependsOn("wrapper");
         });
 
         return provider;

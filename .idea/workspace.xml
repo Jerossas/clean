@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a1a877-5632-4fc7-8d26-0efed0431022" name="Changes" comment="feat: add functionality to get tasks' properties from the cli&#10;&#10;- the idea configuration changed">
-      <change afterPath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/tasks/ScaffoldTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b8a1a877-5632-4fc7-8d26-0efed0431022" name="Changes" comment="feat: create custom task ScaffoldTask.&#10;&#10;- for the moment, the scaffold task only creates four directories: domain, application, infrastructure and web. later, these directories will be modules.&#10;- registered tha scaffold task in the plugin configuration.&#10;- restructure the plugin configuration, so we have a method for provider.">
       <change beforePath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/CleanPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/CleanPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786123228201</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: create custom task ScaffoldTask.&#10;&#10;- for the moment, the scaffold task only creates four directories: domain, application, infrastructure and web. later, these directories will be modules.&#10;- registered tha scaffold task in the plugin configuration.&#10;- restructure the plugin configuration, so we have a method for provider.">
+      <option name="closed" value="true" />
+      <created>1786214257293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1786214257294</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +166,7 @@
     <MESSAGE value="feat: create custom extension to get information from the build" />
     <MESSAGE value="feat: configure task to get the extension properties and use them, and map the extension properties to the task properties" />
     <MESSAGE value="feat: add functionality to get tasks' properties from the cli&#10;&#10;- the idea configuration changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add functionality to get tasks' properties from the cli&#10;&#10;- the idea configuration changed" />
+    <MESSAGE value="feat: create custom task ScaffoldTask.&#10;&#10;- for the moment, the scaffold task only creates four directories: domain, application, infrastructure and web. later, these directories will be modules.&#10;- registered tha scaffold task in the plugin configuration.&#10;- restructure the plugin configuration, so we have a method for provider." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create custom task ScaffoldTask.&#10;&#10;- for the moment, the scaffold task only creates four directories: domain, application, infrastructure and web. later, these directories will be modules.&#10;- registered tha scaffold task in the plugin configuration.&#10;- restructure the plugin configuration, so we have a method for provider." />
   </component>
 </project>
