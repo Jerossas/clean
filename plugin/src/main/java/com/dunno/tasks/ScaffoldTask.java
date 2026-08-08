@@ -9,6 +9,8 @@ import org.gradle.api.tasks.TaskAction;
 import javax.inject.Inject;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
 public abstract class ScaffoldTask extends DefaultTask {
@@ -59,5 +61,23 @@ public abstract class ScaffoldTask extends DefaultTask {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
+        for(var pkg : packages) {
+            try {
+                String content;
+                try (InputStream stream = getClass().getResourceAsStream(String.format("/templates/%s.build.gradle", pkg))) {
+
+                    if (stream == null) {
+                        throw new IllegalStateException("No template found for module: " + pkg);
+                    }
+                    content = new String(stream.readAllBytes(), StandardCharsets.UTF_8);
+                }
+
+                Files.writeString(baseDirectory.toPath().resolve(pkg).resolve("build.gradle"), content);
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
+
 }

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a1a877-5632-4fc7-8d26-0efed0431022" name="Changes" comment="feat: run the wrapper task before creating the directories">
+    <list default="true" id="b8a1a877-5632-4fc7-8d26-0efed0431022" name="Changes" comment="feat: add functionality to create the settings file&#10;&#10;- moved the extension declaration out of the helloArchitecture provider creation to the apply method">
+      <change afterPath="$PROJECT_DIR$/plugin/src/main/resources/templates/application.build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/src/main/resources/templates/domain.build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/src/main/resources/templates/infrastructure.build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/src/main/resources/templates/web.build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/CleanPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/CleanPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/tasks/ScaffoldTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/java/com/dunno/tasks/ScaffoldTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786223494223</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add functionality to create the settings file&#10;&#10;- moved the extension declaration out of the helloArchitecture provider creation to the apply method">
+      <option name="closed" value="true" />
+      <created>1786226168561</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1786226168561</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +189,7 @@
     <MESSAGE value="feat: add functionality to get tasks' properties from the cli&#10;&#10;- the idea configuration changed" />
     <MESSAGE value="feat: create custom task ScaffoldTask.&#10;&#10;- for the moment, the scaffold task only creates four directories: domain, application, infrastructure and web. later, these directories will be modules.&#10;- registered tha scaffold task in the plugin configuration.&#10;- restructure the plugin configuration, so we have a method for provider." />
     <MESSAGE value="feat: run the wrapper task before creating the directories" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: run the wrapper task before creating the directories" />
+    <MESSAGE value="feat: add functionality to create the settings file&#10;&#10;- moved the extension declaration out of the helloArchitecture provider creation to the apply method" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add functionality to create the settings file&#10;&#10;- moved the extension declaration out of the helloArchitecture provider creation to the apply method" />
   </component>
 </project>
