@@ -13,17 +13,18 @@ public class CleanPlugin implements Plugin<Project> {
     @Override
     public void apply(Project project) {
 
+        CleanExtension clean = project.getExtensions().create("clean", CleanExtension.class);
+
         project.getTasks().named("wrapper", Wrapper.class, wrapper -> {
 
             wrapper.setGradleVersion("9.5.1");
         });
-        var helloArchitectureProvider = registerHelloArchitectureTask(project);
-        var scaffoldProvider = registerScaffoldTask(project);
+        var helloArchitectureProvider = registerHelloArchitectureTask(project, clean);
+        var scaffoldProvider = registerScaffoldTask(project, clean);
     }
 
-    private TaskProvider<HelloArchitectureTask> registerHelloArchitectureTask(Project project) {
+    private TaskProvider<HelloArchitectureTask> registerHelloArchitectureTask(Project project, CleanExtension extension) {
 
-        var extension = project.getExtensions().create("clean", CleanExtension.class);
         var provider = project.getTasks().register("helloArchitecture", HelloArchitectureTask.class);
 
         provider.configure(helloArchitectureTask -> {
@@ -38,12 +39,15 @@ public class CleanPlugin implements Plugin<Project> {
         return provider;
     }
 
-    private TaskProvider<ScaffoldTask> registerScaffoldTask(Project project) {
+    private TaskProvider<ScaffoldTask> registerScaffoldTask(Project project, CleanExtension extension) {
 
         var provider = project.getTasks().register("scaffold", ScaffoldTask.class);
 
         provider.configure(scaffoldTask -> {
             scaffoldTask.setGroup("Architecture");
+
+            scaffoldTask.getProjectName().set(extension.getProjectName());
+
             scaffoldTask.dependsOn("wrapper");
         });
 
